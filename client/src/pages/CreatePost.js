@@ -19,7 +19,7 @@ export default function CreatePost() {
         data.set('file', files[0]);
         ev.preventDefault()
         const baseUrl = process.env.BASE_URL
-        const response = await fetch('https://cvserver-3tbg.onrender.com/post', {
+        const response = await fetch('https://my-por-t-fv.vercel.app/post', {
             method: 'POST',
             body: data,
             credentials: 'include',

@@ -6,7 +6,7 @@ export default function RegisterPage() {
 
     async function register(ev){
         ev.preventDefault()
-        const response = await fetch('https://cvserver-3tbg.onrender.com/register', {
+        const response = await fetch('https://my-por-t-fv.vercel.app/register', {
             method: 'POST',
             body: JSON.stringify({username,password}),
             headers: {'Content-Type':'application/json'},
