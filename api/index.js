@@ -160,4 +160,5 @@ app.get('/post/:id', async (req,res) =>{
     res.json(postDoc)
 })
 
-app.listen(4000)
+//app.listen(4000)
+module.exports = app;
