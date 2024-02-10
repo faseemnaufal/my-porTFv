@@ -16,7 +16,7 @@ require('dotenv').config();
 const salt = bcrypt.genSaltSync(10)
 const secret = 'asdasdasdadadasda'
 
-app.use(cors())
+app.use(cors({credentials:true, origin:['https://my-por-t-fv-6s3f.vercel.app', 'https://my-por-t-fv.vercel.app']}))
 
 // app.use(cors({credentials:true, origin:'*'}))
 app.use(express.json())
