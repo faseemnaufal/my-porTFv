@@ -16,8 +16,8 @@ require('dotenv').config();
 const salt = bcrypt.genSaltSync(10)
 const secret = 'asdasdasdadadasda'
 
-//app.use(cors({credentials:true, origin:'https://my-por-t-fv-6s3f.vercel.app/'}))
-app.use(cors({credentials:true}))
+app.use(cors({credentials:true, origin:'https://my-por-t-fv-6s3f.vercel.app/'}))
+// app.use(cors({credentials:true, origin:'*'}))
 app.use(express.json())
 app.use(cookieParser())
 app.use('/uploads', express.static(__dirname + '/uploads'))
