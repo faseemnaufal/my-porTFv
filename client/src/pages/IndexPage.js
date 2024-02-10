@@ -5,7 +5,7 @@ export default function IndexPage() {
   const [posts,setPosts] = useState([])
 
   useEffect(() => {
-    fetch('https://my-por-t-fv.vercel.app/post').then(response => {
+    fetch('/post').then(response => {
       response.json().then(posts => {
         setPosts(posts)
       })
