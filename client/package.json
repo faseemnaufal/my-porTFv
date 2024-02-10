@@ -1,4 +1,6 @@
 {
+  "proxy": "https://my-por-t-fv.vercel.app",
+
   "name": "client",
   "version": "0.1.0",
   "private": true,

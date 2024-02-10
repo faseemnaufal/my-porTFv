@@ -7,7 +7,7 @@ export default function Header() {
   const {setUserInfo,userInfo} = useContext(UserContext)
 
   useEffect(() =>{
-    fetch('https://my-por-t-fv.vercel.app/profile', {
+    fetch('/profile', {
       credentials: 'include',
     }).then(response => {
       response.json().then(userInfo => {
